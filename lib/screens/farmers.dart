@@ -28,7 +28,10 @@ class _FarmerScreenState extends ConsumerState<FarmersScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Your Farms"),
+        title: const Text(
+          "Marketplace",
+        ),
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
         actions: [
           IconButton(
             icon: const Icon(Icons.add),
@@ -39,7 +42,7 @@ class _FarmerScreenState extends ConsumerState<FarmersScreen> {
                 ),
               );
             },
-          )
+          ),
         ],
       ),
       body: Padding(
