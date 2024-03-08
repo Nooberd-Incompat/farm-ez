@@ -63,6 +63,7 @@ flutter:
   assets:
     - assets/logo/farmez.png
     - assets/logo/farmez_icon.png
+    - assets/images/kisan_diwas_poster.jpg
     - assets/login/facebook.png
     - assets/login/twitter.png
     - assets/login/google.png
