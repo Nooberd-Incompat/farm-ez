@@ -24,12 +24,12 @@ class HomeScreen extends StatelessWidget {
         onTap: (index) {},
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_box),
-            label: 'xyz',
+            icon: Icon(Icons.home),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.star),
-            label: 'pqr',
+            icon: Icon(Icons.menu_book),
+            label: 'Tutorials',
           ),
         ],
       ),
