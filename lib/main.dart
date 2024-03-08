@@ -1,4 +1,6 @@
 import 'package:farm_ez/screens/home_screen.dart';
+
+import 'package:farm_ez/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 final theme = ThemeData(
@@ -22,7 +24,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: theme,
-      home: const HomeScreen(),
+      home: const SplashScreen(),
     );
   }
 }
