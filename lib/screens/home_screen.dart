@@ -23,11 +23,11 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Text(
-              'farm Ez',
-              style: Theme.of(context)
-                  .textTheme
-                  .titleLarge!
-                  .copyWith(fontWeight: FontWeight.bold),
+              'Farm EZ',
+              style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 27,
+                  color: const Color.fromARGB(255, 1, 66, 3)),
             ),
           ],
         ),
@@ -47,7 +47,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: const MainContent(),
+      body: MainContent(),
     );
   }
 }
