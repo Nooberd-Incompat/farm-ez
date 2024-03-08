@@ -84,21 +84,6 @@ class _MainDrawerState extends State<MainDrawer> {
           ),
           ListTile(
             leading: Icon(
-              Icons.settings,
-              size: 24,
-              color: Theme.of(context).colorScheme.primary,
-            ),
-            title: Text(
-              'XYZ',
-              style: Theme.of(context)
-                  .textTheme
-                  .titleSmall!
-                  .copyWith(color: Theme.of(context).colorScheme.primary),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
               Icons.business,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
