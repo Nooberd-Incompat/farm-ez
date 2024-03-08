@@ -1,3 +1,4 @@
+import 'package:farm_ez/screens/about_us.dart';
 import 'package:farm_ez/screens/farmers.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,16 @@ class _MainDrawerState extends State<MainDrawer> {
         ),
       );
     });
-    // You can add code here to handle toggling dark mode in your app
+  }
+
+  void navigateaboutus() {
+    setState(() {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (ctx) => const AboutUsScreen(),
+        ),
+      );
+    });
   }
 
   @override
@@ -68,12 +78,12 @@ class _MainDrawerState extends State<MainDrawer> {
           ),
           ListTile(
             leading: Icon(
-              Icons.info_outline,
+              Icons.person,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              'About',
+              'Profile',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
@@ -113,18 +123,18 @@ class _MainDrawerState extends State<MainDrawer> {
           ),
           ListTile(
             leading: Icon(
-              Icons.people_alt_rounded,
+              Icons.info_outline,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              'Credits',
+              'About us',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
                   .copyWith(color: Theme.of(context).colorScheme.primary),
             ),
-            onTap: () {},
+            onTap: navigateaboutus,
           ),
         ],
       ),
