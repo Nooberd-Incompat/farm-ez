@@ -76,6 +76,9 @@ flutter:
     - assets/images/pm_kisan.jpg
     - assets/images/pm_kisan_yojana.jpg
     - assets/images/gov_schemes.webp
+    - assets/images/shrijeet.jpg
+    - assets/images/ayush.jpg
+    - assets/images/yojith.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

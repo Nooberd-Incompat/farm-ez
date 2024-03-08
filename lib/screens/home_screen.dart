@@ -14,7 +14,7 @@ class HomeScreen extends StatelessWidget {
           'Welcome to Farm EZ !',
           style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 fontWeight: FontWeight.w400,
-                color: const Color.fromARGB(255, 1, 66, 3),
+                color: const Color.fromARGB(255, 7, 48, 2),
               ),
         ),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
