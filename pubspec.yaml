@@ -43,6 +43,7 @@ dependencies:
   sqflite: ^2.3.2
   image_picker: ^1.0.7
   flutter_lints: ^3.0.1
+  webview_flutter: ^2.0.13
 
 dev_dependencies:
   flutter_test:
@@ -79,6 +80,7 @@ flutter:
     - assets/images/shrijeet.jpg
     - assets/images/ayush.jpg
     - assets/images/yojith.jpg
+    - assets/images/coming_soon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

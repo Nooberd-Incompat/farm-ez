@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class AboutUsScreen extends ConsumerStatefulWidget {
@@ -28,11 +27,12 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
                 color: const Color.fromARGB(255, 7, 48, 2),
               ),
         ),
+        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Card(
@@ -41,19 +41,20 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
                 // Defines the shape of the card
                 borderRadius: BorderRadius.circular(
                     12), // Adjust the border radius to change the card's corners
-                side: BorderSide(
-                    color: Colors.grey,
+                side: const BorderSide(
+                    color: Color.fromARGB(255, 173, 237, 206),
                     width: 1), // Optional: Add a border around the card
               ),
-              color: Colors.greenAccent, // Set the background color of the card
-              margin: EdgeInsets.all(8), // Set the margin around the card
-              child: Padding(
+              color: const Color.fromARGB(
+                  255, 210, 247, 218), // Set the background color of the card
+              margin: const EdgeInsets.all(8), // Set the margin around the card
+              child: const Padding(
                 padding: EdgeInsets.all(15), // Set the padding inside the card
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'This is an app, integrated with machine learning, used for easing different stages of farming and harvesting. Our goal is to provide a platform for beginner farmers and the experienced ones to utilise the app for utility functions.',
+                      'Farm EZ is an app, integrated with machine learning, used for easing different stages of farming and harvesting. Our goal is to provide a platform for beginner farmers as well as the experienced ones to utilise the app for utility functions.',
                       style: TextStyle(
                         fontSize: 20,
                         fontFamily: 'Roboto',
@@ -68,31 +69,35 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
             ),
             const Text(
               "Meet the team",
-              style: TextStyle(fontWeight: FontWeight.w300, fontSize: 15),
+              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
             ),
             Card(
               elevation: 4,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Center(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Image on the left
-                    ClipOval(
-                      child: Container(
-                        width: 120, // Adjust the width of the image container
-                        height: 120, // Adjust the height of the image container
-                        child: Image.asset(
-                          'assets/images/ayush.jpg',
-                          fit: BoxFit.cover,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: ClipOval(
+                        child: SizedBox(
+                          width: 120, // Adjust the width of the image container
+                          height:
+                              120, // Adjust the height of the image container
+                          child: Image.asset(
+                            'assets/images/ayush.jpg',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
                     // Description on the right
-                    Expanded(
+                    const Expanded(
                       child: Padding(
                         padding: EdgeInsets.all(16),
                         child: Column(
@@ -107,7 +112,7 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
                             ),
                             SizedBox(height: 4),
                             Text(
-                              'IOTA core member for app development. Expert in Flutter and Dart. Experienced in home automation apps',
+                              'IOTA core member for app development. Operates in Flutter and Dart. Has experience in home automation apps.',
                               style: TextStyle(
                                 fontSize: 14,
                               ),
@@ -125,24 +130,28 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Center(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Image on the left
-                    ClipOval(
-                      child: Container(
-                        width: 120, // Adjust the width of the image container
-                        height: 120, // Adjust the height of the image container
-                        child: Image.asset(
-                          'assets/images/yojith.jpg',
-                          fit: BoxFit.cover,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: ClipOval(
+                        child: SizedBox(
+                          width: 120, // Adjust the width of the image container
+                          height:
+                              120, // Adjust the height of the image container
+                          child: Image.asset(
+                            'assets/images/yojith.jpg',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
                     // Description on the right
-                    Expanded(
+                    const Expanded(
                       child: Padding(
                         padding: EdgeInsets.all(16),
                         child: Column(
@@ -157,7 +166,7 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
                             ),
                             SizedBox(height: 4),
                             Text(
-                              'GSDC core member for app development. Highly proficient in Flutter and Dart. Experienced in various types of apps, including chatroom app',
+                              'GSDC core member for app development. Highly proficient in Flutter and Dart. Experienced in various types of apps, including chatroom app.',
                               style: TextStyle(
                                 fontSize: 14,
                               ),
@@ -175,24 +184,28 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(12),
               ),
-              margin: EdgeInsets.all(16),
+              margin: const EdgeInsets.all(16),
               child: Center(
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     // Image on the left
-                    ClipOval(
-                      child: Container(
-                        width: 120, // Adjust the width of the image container
-                        height: 120, // Adjust the height of the image container
-                        child: Image.asset(
-                          'assets/images/shrijeet.jpg',
-                          fit: BoxFit.cover,
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: ClipOval(
+                        child: SizedBox(
+                          width: 120, // Adjust the width of the image container
+                          height:
+                              120, // Adjust the height of the image container
+                          child: Image.asset(
+                            'assets/images/shrijeet.jpg',
+                            fit: BoxFit.cover,
+                          ),
                         ),
                       ),
                     ),
                     // Description on the right
-                    Expanded(
+                    const Expanded(
                       child: Padding(
                         padding: EdgeInsets.all(16),
                         child: Column(
@@ -207,7 +220,7 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
                             ),
                             SizedBox(height: 4),
                             Text(
-                              'Matrix core member. Very invested into the learnings and practices of machine learning and data science',
+                              'Matrix core member. Very invested into the learnings and practices of machine learning and data science.',
                               style: TextStyle(
                                 fontSize: 14,
                               ),
@@ -219,6 +232,9 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
                   ],
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 50,
             ),
           ],
         ),

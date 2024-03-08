@@ -56,8 +56,8 @@ class TutorialScreen extends StatelessWidget {
   }
 
   Future<void> _launchURL(Uri url) async {
-    if (await canLaunchUrl(url)) {
-      await launchUrl(url);
+    if (await canLaunch(url.toString())) {
+      await launch(url.toString());
     } else {
       throw 'Could not launch $url';
     }

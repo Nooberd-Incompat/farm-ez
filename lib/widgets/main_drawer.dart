@@ -1,3 +1,4 @@
+import 'package:farm_ez/screens/about_us.dart';
 import 'package:farm_ez/screens/farmers.dart';
 import 'package:flutter/material.dart';
 
@@ -124,7 +125,13 @@ class _MainDrawerState extends State<MainDrawer> {
                   .titleSmall!
                   .copyWith(color: Theme.of(context).colorScheme.primary),
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => const AboutUsScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),

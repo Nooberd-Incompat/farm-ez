@@ -43,6 +43,9 @@ class MainContent extends StatelessWidget {
                     FeatureButton(
                       icon: Icon(Icons.help_outline_rounded),
                       label: 'Crop\nRecommendation',
+                      link:
+                          'https://shrijeet14-crop-reco-stream-7tgnlu.streamlit.app/',
+                      title: 'Crop Recommendation',
                     ),
                     SizedBox(
                       width: 35,
@@ -50,13 +53,20 @@ class MainContent extends StatelessWidget {
                     FeatureButton(
                       icon: Icon(Icons.pest_control),
                       label: 'Disease\nDetection',
+                      link:
+                          'https://shrijeet14-plant-disease-stream-wq3guj.streamlit.app/',
+                      title: 'Disease Detection',
                     ),
                     SizedBox(
                       width: 35,
                     ),
                     FeatureButton(
-                        icon: Icon(Icons.medication),
-                        label: 'Fertilizer\nRecommendation')
+                      icon: Icon(Icons.medication),
+                      label: 'Fertilizer\nRecommendation',
+                      link:
+                          'https://shrijeet14-fertilizer-recommend-stream-ueugf5.streamlit.app/',
+                      title: 'Fertilizer Recommendation',
+                    ),
                   ],
                 ),
               ),
@@ -82,6 +92,8 @@ class MainContent extends StatelessWidget {
                     FeatureButton(
                       icon: Icon(Icons.water_drop),
                       label: 'Irrigation\nManagement',
+                      link: '',
+                      title: 'Irrigation Management',
                     ),
                     SizedBox(
                       width: 40,
@@ -89,6 +101,8 @@ class MainContent extends StatelessWidget {
                     FeatureButton(
                       icon: Icon(Icons.grass_outlined),
                       label: 'Yield\nManagement',
+                      link: '',
+                      title: 'Yield Management',
                     ),
                     SizedBox(
                       width: 40,
@@ -96,6 +110,8 @@ class MainContent extends StatelessWidget {
                     FeatureButton(
                       icon: Icon(Icons.attach_money_outlined),
                       label: 'Marketing',
+                      link: '',
+                      title: 'Yield Management',
                     ),
                   ],
                 ),
