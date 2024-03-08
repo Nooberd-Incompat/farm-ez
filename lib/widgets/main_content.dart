@@ -1,8 +1,16 @@
+import 'package:farm_ez/widgets/big_card.dart';
 import 'package:farm_ez/widgets/feature_button.dart';
 import 'package:flutter/material.dart';
 
 class MainContent extends StatelessWidget {
-  const MainContent({super.key});
+  MainContent({super.key});
+
+  final List<String> imageUrls = [
+    'assets/images/kisan_diwas_poster.jpg',
+    'assets/images/pm_kisan_yojana.jpg',
+    'assets/images/pm_kisan.jpg',
+    'assets/images/ gov_schemes.webp'
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -12,10 +20,8 @@ class MainContent extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            const Card(
-              child: Image(
-                image: AssetImage('assets/images/kisan_diwas_poster.jpg'),
-              ),
+            BigCard(
+              imageUrls: imageUrls,
             ),
             const SizedBox(
               height: 10,
