@@ -68,12 +68,12 @@ class _MainDrawerState extends State<MainDrawer> {
           ),
           ListTile(
             leading: Icon(
-              Icons.info_outline,
+              Icons.person,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              'About',
+              'Profile',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
@@ -113,12 +113,12 @@ class _MainDrawerState extends State<MainDrawer> {
           ),
           ListTile(
             leading: Icon(
-              Icons.people_alt_rounded,
+              Icons.info_outline,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              'Credits',
+              'About us',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
