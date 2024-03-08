@@ -28,7 +28,7 @@ class MainDrawer extends StatelessWidget {
             child: Row(
               children: [
                 Icon(
-                  Icons.fastfood,
+                  Icons.access_time_sharp,
                   size: 36,
                   color: Theme.of(context).colorScheme.primary,
                 ),
@@ -36,7 +36,7 @@ class MainDrawer extends StatelessWidget {
                   width: 16,
                 ),
                 Text(
-                  'Cooking ...',
+                  'Dummy ...',
                   style: TextStyle(
                     fontSize: 28,
                     color: Theme.of(context).colorScheme.primary,
@@ -47,12 +47,12 @@ class MainDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(
-              Icons.restaurant,
+              Icons.abc,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              'Meals',
+              'ABC',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
@@ -67,7 +67,7 @@ class MainDrawer extends StatelessWidget {
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              'Filters',
+              'XYZ',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!

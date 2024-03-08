@@ -63,9 +63,13 @@ flutter:
   assets:
     - assets/logo/farmez.png
     - assets/logo/farmez_icon.png
+<<<<<<<<< Temporary merge branch 1
     - assets/login/facebook.png
     - assets/login/twitter.png
     - assets/login/google.png
+=========
+    - assets/images/kisan_diwas_poster.jpg
+>>>>>>>>> Temporary merge branch 2
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

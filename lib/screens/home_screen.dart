@@ -1,3 +1,4 @@
+import 'package:farm_ez/widgets/main_content.dart';
 import 'package:farm_ez/widgets/main_drawer.dart';
 
 import 'package:flutter/material.dart';
@@ -9,7 +10,6 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
         title: Row(
           children: [
             const SizedBox(
@@ -38,15 +38,16 @@ class HomeScreen extends StatelessWidget {
         onTap: (index) {},
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.set_meal),
-            label: 'Categories',
+            icon: Icon(Icons.add_box),
+            label: 'xyz',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.star),
-            label: 'Favourites',
+            label: 'pqr',
           ),
         ],
       ),
+      body: const MainContent(),
     );
   }
 }
