@@ -1,5 +1,4 @@
 import 'package:farm_ez/screens/farmers.dart';
-import 'package:farm_ez/widgets/farmers_list.dart';
 import 'package:flutter/material.dart';
 
 class MainDrawer extends StatefulWidget {
@@ -48,18 +47,19 @@ class _MainDrawerState extends State<MainDrawer> {
             ),
             child: Row(
               children: [
-                Icon(
-                  Icons.access_time_sharp,
-                  size: 36,
-                  color: Theme.of(context).colorScheme.primary,
+                const Image(
+                  image: AssetImage(
+                    'assets/logo/farmez_icon.png',
+                  ),
                 ),
                 const SizedBox(
                   width: 16,
                 ),
                 Text(
-                  'Dummy ...',
+                  'Farm EZ',
                   style: TextStyle(
                     fontSize: 28,
+                    fontWeight: FontWeight.w600,
                     color: Theme.of(context).colorScheme.primary,
                   ),
                 ),
@@ -68,12 +68,12 @@ class _MainDrawerState extends State<MainDrawer> {
           ),
           ListTile(
             leading: Icon(
-              Icons.abc,
+              Icons.info_outline,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              'ABC',
+              'About',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
@@ -98,18 +98,33 @@ class _MainDrawerState extends State<MainDrawer> {
           ),
           ListTile(
             leading: Icon(
-              isStakeHolder ? Icons.energy_savings_leaf : Icons.business,
+              Icons.business,
               size: 24,
               color: Theme.of(context).colorScheme.primary,
             ),
             title: Text(
-              isStakeHolder ? 'Farmer Mode' : 'Stake Holder Mode',
+              'Stake Holder Mode',
               style: Theme.of(context)
                   .textTheme
                   .titleSmall!
                   .copyWith(color: Theme.of(context).colorScheme.primary),
             ),
             onTap: toggleStakeHolderMode,
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.people_alt_rounded,
+              size: 24,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            title: Text(
+              'Credits',
+              style: Theme.of(context)
+                  .textTheme
+                  .titleSmall!
+                  .copyWith(color: Theme.of(context).colorScheme.primary),
+            ),
+            onTap: () {},
           ),
         ],
       ),

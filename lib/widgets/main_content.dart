@@ -9,7 +9,6 @@ class MainContent extends StatelessWidget {
     'assets/images/kisan_diwas_poster.jpg',
     'assets/images/pm_kisan_yojana.jpg',
     'assets/images/pm_kisan.jpg',
-    'assets/images/ gov_schemes.webp'
   ];
 
   @override

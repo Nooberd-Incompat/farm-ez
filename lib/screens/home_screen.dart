@@ -10,26 +10,12 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          children: [
-            const SizedBox(
-              height: 60,
-              width: 60,
-              child: Padding(
-                padding: EdgeInsets.only(top: 6, bottom: 6, left: 0, right: 5),
-                child: Image(
-                  image: AssetImage('assets/logo/farmez_icon.png'),
-                ),
+        title: Text(
+          'Welcome to Farm EZ !',
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                fontWeight: FontWeight.w400,
+                color: const Color.fromARGB(255, 1, 66, 3),
               ),
-            ),
-            Text(
-              'Farm EZ',
-              style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 27,
-                  color: const Color.fromARGB(255, 1, 66, 3)),
-            ),
-          ],
         ),
         backgroundColor: Theme.of(context).colorScheme.primaryContainer,
       ),
