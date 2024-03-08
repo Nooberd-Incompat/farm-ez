@@ -1,4 +1,3 @@
-import 'package:farm_ez/main.dart';
 import 'package:flutter/material.dart';
 
 class FeatureButton extends StatelessWidget {
