@@ -1,3 +1,4 @@
+import 'package:farm_ez/screens/about_us.dart';
 import 'package:farm_ez/screens/farmers.dart';
 import 'package:flutter/material.dart';
 
@@ -22,7 +23,16 @@ class _MainDrawerState extends State<MainDrawer> {
         ),
       );
     });
-    // You can add code here to handle toggling dark mode in your app
+  }
+
+  void navigateaboutus() {
+    setState(() {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (ctx) => const AboutUsScreen(),
+        ),
+      );
+    });
   }
 
   @override
@@ -124,7 +134,7 @@ class _MainDrawerState extends State<MainDrawer> {
                   .titleSmall!
                   .copyWith(color: Theme.of(context).colorScheme.primary),
             ),
-            onTap: () {},
+            onTap: navigateaboutus,
           ),
         ],
       ),
