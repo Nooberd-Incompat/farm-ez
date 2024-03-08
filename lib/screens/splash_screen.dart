@@ -1,4 +1,5 @@
-import 'package:farm_ez/screens/home_screen.dart';
+// import 'package:farm_ez/screens/home_screen.dart';
+import 'package:farm_ez/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -21,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen>
       () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
-            builder: (_) => const HomeScreen(),
+            builder: (_) => const LoginScreen(),
           ),
         );
       },
