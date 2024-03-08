@@ -1,4 +1,4 @@
-// import 'package:farm_ez/screens/home_screen.dart';
+import 'package:farm_ez/screens/home_screen.dart';
 import 'package:farm_ez/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen>
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
 
     Future.delayed(
-      Duration(seconds: 3),
+      const Duration(seconds: 3),
       () {
         Navigator.of(context).pushReplacement(
           MaterialPageRoute(
@@ -41,7 +41,7 @@ class _SplashScreenState extends State<SplashScreen>
     return Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           gradient: LinearGradient(
               colors: [Colors.green, Colors.greenAccent],
               begin: Alignment.topRight,
@@ -55,10 +55,10 @@ class _SplashScreenState extends State<SplashScreen>
               width: 200,
               //color: const Color.fromARGB(36, 255, 255, 255),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Text(
+            const Text(
               "Farm-EZ",
               style: TextStyle(
                   fontStyle: FontStyle.italic,

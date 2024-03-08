@@ -1,3 +1,4 @@
+import 'package:farm_ez/screens/home_screen.dart';
 import 'package:farm_ez/widgets/custom_clipper.dart';
 import 'package:flutter/material.dart';
 
@@ -51,8 +52,8 @@ class _LoginScreenState extends State<LoginScreen> {
         decoration: const BoxDecoration(
             gradient: LinearGradient(
           colors: [
-            Color.fromARGB(255, 79, 200, 83),
-            Colors.greenAccent,
+            Color.fromARGB(255, 1, 82, 5),
+            Color.fromARGB(255, 38, 207, 13),
           ],
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
@@ -84,6 +85,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   String email = emailController.text.trim();
                   String password = passwordController.text.trim();
                   print("Email : $email Password : $password");
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (ctx) => const HomeScreen(),
+                    ),
+                  );
                 },
                 child: const Text("LOGIN"),
               ),
