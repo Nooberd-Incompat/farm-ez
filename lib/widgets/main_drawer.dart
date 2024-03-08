@@ -134,7 +134,13 @@ class _MainDrawerState extends State<MainDrawer> {
                   .titleSmall!
                   .copyWith(color: Theme.of(context).colorScheme.primary),
             ),
-            onTap: () {},
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (ctx) => const AboutUsScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),
