@@ -90,7 +90,7 @@ class _AboutUsScreenState extends ConsumerState<AboutUsScreen> {
                           height:
                               120, // Adjust the height of the image container
                           child: Image.asset(
-                            'assets/images/ayush.jpg',
+                            'assets/images/ayush2.png',
                             fit: BoxFit.cover,
                           ),
                         ),
