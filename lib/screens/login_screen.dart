@@ -1,6 +1,8 @@
+import 'package:farm_ez/screens/farmers.dart';
 import 'package:farm_ez/screens/home_screen.dart';
 import 'package:farm_ez/screens/home_screen.dart';
 import 'package:farm_ez/widgets/custom_clipper.dart';
+import 'package:farm_ez/widgets/farmers_list.dart';
 import 'package:flutter/material.dart';
 // import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';

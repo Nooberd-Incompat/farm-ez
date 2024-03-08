@@ -1,9 +1,30 @@
+import 'package:farm_ez/screens/farmers.dart';
+import 'package:farm_ez/widgets/farmers_list.dart';
 import 'package:flutter/material.dart';
 
-class MainDrawer extends StatelessWidget {
+class MainDrawer extends StatefulWidget {
   const MainDrawer({
     super.key,
   });
+
+  @override
+  _MainDrawerState createState() => _MainDrawerState();
+}
+
+class _MainDrawerState extends State<MainDrawer> {
+  bool isStakeHolder = false;
+
+  void toggleStakeHolderMode() {
+    setState(() {
+      isStakeHolder = !isStakeHolder;
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (ctx) => const FarmersScreen(),
+        ),
+      );
+    });
+    // You can add code here to handle toggling dark mode in your app
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -74,6 +95,21 @@ class MainDrawer extends StatelessWidget {
                   .copyWith(color: Theme.of(context).colorScheme.primary),
             ),
             onTap: () {},
+          ),
+          ListTile(
+            leading: Icon(
+              isStakeHolder ? Icons.energy_savings_leaf : Icons.business,
+              size: 24,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            title: Text(
+              isStakeHolder ? 'Farmer Mode' : 'Stake Holder Mode',
+              style: Theme.of(context)
+                  .textTheme
+                  .titleSmall!
+                  .copyWith(color: Theme.of(context).colorScheme.primary),
+            ),
+            onTap: toggleStakeHolderMode,
           ),
         ],
       ),
