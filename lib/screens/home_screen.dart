@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             Text(
-              'farm Ez',
+              'FARM EZ',
               style: Theme.of(context)
                   .textTheme
                   .titleLarge!

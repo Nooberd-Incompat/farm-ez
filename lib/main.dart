@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final theme = ThemeData(
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
-    seedColor: const Color.fromARGB(255, 13, 110, 3),
+    seedColor: const Color.fromARGB(255, 7, 48, 2),
   ),
 );
 
