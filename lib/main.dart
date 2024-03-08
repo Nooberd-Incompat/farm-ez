@@ -1,5 +1,3 @@
-import 'package:farm_ez/screens/home_screen.dart';
-
 import 'package:farm_ez/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
