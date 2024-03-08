@@ -1,6 +1,5 @@
 import 'package:farm_ez/widgets/feature_button.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class MainContent extends StatelessWidget {
   const MainContent({super.key});
@@ -27,7 +26,7 @@ class MainContent extends StatelessWidget {
                 'Facilities available',
                 style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(255, 3, 43, 1)),
+                    color: const Color.fromARGB(255, 3, 43, 1)),
               ),
             ),
             const Card(
@@ -37,7 +36,7 @@ class MainContent extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     FeatureButton(
-                      icon: Icon(Icons.recommend),
+                      icon: Icon(Icons.help_outline_rounded),
                       label: 'Crop\nRecommendation',
                     ),
                     SizedBox(
@@ -60,7 +59,43 @@ class MainContent extends StatelessWidget {
             const SizedBox(
               height: 10,
             ),
-            const Card(),
+            Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'Coming Soon ...',
+                style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                    fontWeight: FontWeight.bold,
+                    color: const Color.fromARGB(255, 3, 43, 1)),
+              ),
+            ),
+            const Card(
+              child: Padding(
+                padding: EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    FeatureButton(
+                      icon: Icon(Icons.water_drop),
+                      label: 'Irrigation\nManagement',
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    FeatureButton(
+                      icon: Icon(Icons.grass_outlined),
+                      label: 'Yield\nManagement',
+                    ),
+                    SizedBox(
+                      width: 40,
+                    ),
+                    FeatureButton(
+                      icon: Icon(Icons.attach_money_outlined),
+                      label: 'Marketing',
+                    ),
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

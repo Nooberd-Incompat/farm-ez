@@ -20,7 +20,7 @@ class FeatureButton extends StatelessWidget {
           label,
           textAlign: TextAlign.center,
           style: const TextStyle(
-              fontSize: 10, color: Color.fromARGB(255, 13, 66, 1)),
+              fontSize: 11, color: Color.fromARGB(255, 13, 66, 1)),
         ),
       ],
     );
