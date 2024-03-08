@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1014536763920",
+    "project_id": "farm-ez",
+    "storage_bucket": "farm-ez.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014536763920:android:603f36e19cd6dd31cea895",
+        "android_client_info": {
+          "package_name": "com.example.farm_ez"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9jwAjJz6y9xuK9Y-Csfqo0-Ai6q_SASw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
