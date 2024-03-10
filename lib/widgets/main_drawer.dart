@@ -23,7 +23,16 @@ class _MainDrawerState extends State<MainDrawer> {
         ),
       );
     });
-    // You can add code here to handle toggling dark mode in your app
+  }
+
+  void navigateaboutus() {
+    setState(() {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (ctx) => const AboutUsScreen(),
+        ),
+      );
+    });
   }
 
   @override
