@@ -54,6 +54,7 @@ class DefaultFirebaseOptions {
     appId: '1:1014536763920:android:603f36e19cd6dd31cea895',
     messagingSenderId: '1014536763920',
     projectId: 'farm-ez',
+    databaseURL: 'https://farm-ez-default-rtdb.firebaseio.com',
     storageBucket: 'farm-ez.appspot.com',
   );
 
@@ -62,6 +63,7 @@ class DefaultFirebaseOptions {
     appId: '1:1014536763920:ios:a0d28c36b6b034bdcea895',
     messagingSenderId: '1014536763920',
     projectId: 'farm-ez',
+    databaseURL: 'https://farm-ez-default-rtdb.firebaseio.com',
     storageBucket: 'farm-ez.appspot.com',
     iosBundleId: 'com.example.farmEz',
   );
