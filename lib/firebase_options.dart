@@ -50,21 +50,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD9jwAjJz6y9xuK9Y-Csfqo0-Ai6q_SASw',
-    appId: '1:1014536763920:android:603f36e19cd6dd31cea895',
-    messagingSenderId: '1014536763920',
-    projectId: 'farm-ez',
-    databaseURL: 'https://farm-ez-default-rtdb.firebaseio.com',
-    storageBucket: 'farm-ez.appspot.com',
+    apiKey: 'AIzaSyDQA_C29oj_ScWEND7BPMoj0dohZZh3HUk',
+    appId: '1:424582468910:android:80215f09f238fddd1756bf',
+    messagingSenderId: '424582468910',
+    projectId: 'farm-ez1',
+    storageBucket: 'farm-ez1.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCB3i1_wWzi51hR6M6NO3k0cYMoJt1LThw',
-    appId: '1:1014536763920:ios:a0d28c36b6b034bdcea895',
-    messagingSenderId: '1014536763920',
-    projectId: 'farm-ez',
-    databaseURL: 'https://farm-ez-default-rtdb.firebaseio.com',
-    storageBucket: 'farm-ez.appspot.com',
+    apiKey: 'AIzaSyDnsPTflxLf9sx6j_Y3p6sGjCSs-oPqwpc',
+    appId: '1:424582468910:ios:279aa34ce16d06561756bf',
+    messagingSenderId: '424582468910',
+    projectId: 'farm-ez1',
+    storageBucket: 'farm-ez1.appspot.com',
     iosBundleId: 'com.example.farmEz',
   );
 }

@@ -1,14 +1,13 @@
 {
   "project_info": {
-    "project_number": "1014536763920",
-    "firebase_url": "https://farm-ez-default-rtdb.firebaseio.com",
-    "project_id": "farm-ez",
-    "storage_bucket": "farm-ez.appspot.com"
+    "project_number": "424582468910",
+    "project_id": "farm-ez1",
+    "storage_bucket": "farm-ez1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1014536763920:android:603f36e19cd6dd31cea895",
+        "mobilesdk_app_id": "1:424582468910:android:80215f09f238fddd1756bf",
         "android_client_info": {
           "package_name": "com.example.farm_ez"
         }
@@ -16,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD9jwAjJz6y9xuK9Y-Csfqo0-Ai6q_SASw"
+          "current_key": "AIzaSyDQA_C29oj_ScWEND7BPMoj0dohZZh3HUk"
         }
       ],
       "services": {
